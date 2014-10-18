@@ -49,3 +49,8 @@ public class CalculatorTest {
 			assertEquals("Negative number not allowed: [-2]", message);
 		}
 	}
+
+	@Test
+	public void testIgnoreNumbersBiggerThan1000(){
+		assertEquals(3, Calculator.add("1002,3"));
+	}
